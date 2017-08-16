@@ -39,7 +39,6 @@ const totalBusinessDays = february.numberOfBusinessDays(); // 19 (Using default 
 |holidays|array|Holiday dates in the year  |No      |
 
 #### Example
-
 ```
 const december = ThisMonth({
     year: 2017,

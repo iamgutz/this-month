@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "plugins": [
+    "import"
+  ],
+  "env": {
+    "mocha": true,
+    "browser": true
+  },
+  "globals": {
+      "WebSocket": false
+  }
+}

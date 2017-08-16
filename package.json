@@ -1,0 +1,51 @@
+{
+  "name": "this-month",
+  "version": "1.0.0",
+  "description": "Utility library to get details about an specific month.",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^4.1.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "install": "^0.10.1",
+    "mocha": "^3.5.0",
+    "npm": "^5.3.0",
+    "rimraf": "^2.6.1"
+  },
+  "scripts": {
+    "prerelease": "git add --all && git commit -m\"Publishing changes\"",
+    "push-master": "git push origin master",
+    "release": "npm version patch && npm run push-master && npm publish",
+    "prepublish": "npm run build",
+    "prebuild": "npm run clean-dist && npm run lint && npm run test",
+    "build": "babel src --out-dir lib --ignore test.js",
+    "clean-dist": "rimraf ./lib",
+    "lint": "eslint src",
+    "lint-fix": "eslint src --fix",
+    "test": "mocha src/*.test.js --compilers js:babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamgutz/this-month.git"
+  },
+  "keywords": [
+    "Date",
+    "Month",
+    "Year",
+    "Holidays",
+    "Days Off",
+    "Natural Days",
+    "Business Days"
+  ],
+  "author": "Michael Gutierrez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamgutz/this-month/issues"
+  },
+  "homepage": "https://github.com/iamgutz/this-month#readme"
+}

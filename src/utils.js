@@ -33,12 +33,11 @@ export function getDaysOff(daysOff = []) {
   for (let i = 0; i < daysOff.length; i += 1) {
     const dayName = daysOff[i].toLowerCase();
 
-    try {
-      const dayNumber = daysMap[dayName];
-      definedDaysOff.push(dayNumber);
-    } catch (e) {
-      throw new Error('Invalid day name.');
-    }
+    const dayNumber = daysMap[dayName];
+
+    if (!dayNumber) throw new Error('Invalid day name.');
+
+    definedDaysOff.push(dayNumber);
   }
 
   return definedDaysOff;

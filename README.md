@@ -14,7 +14,7 @@ ThisMonth is an small utility class that provides useful methods to get calculat
 
 ## Usage
 ```
-const ThisMonth = require('this-month');
+const ThisMonth = require('this-month').default;
 
 // ES6
 

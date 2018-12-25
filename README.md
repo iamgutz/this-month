@@ -1,4 +1,7 @@
 # ThisMonth
+[![Version](https://img.shields.io/npm/v/this-month.svg?style=for-the-badge&logo=appveyor)]()
+[![Downloads](https://img.shields.io/npm/dw/this-month.svg?style=for-the-badge&logo=appveyor)]()
+[![License](https://img.shields.io/github/license/iamgutz/this-month.svg?style=for-the-badge&logo=appveyor)]()
 How many natural days does April has?
 How many business days does February has?
 How many Holidays are there in December?
@@ -11,6 +14,8 @@ ThisMonth is an small utility class that provides useful methods to get calculat
 
 ## Installation
 `npm install this-month --save`
+or
+`yarn add this-month`
 
 ## Usage
 ```

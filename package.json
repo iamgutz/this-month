@@ -1,6 +1,6 @@
 {
   "name": "this-month",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Utility library to get details about an specific month.",
   "main": "lib/index.js",
   "devDependencies": {

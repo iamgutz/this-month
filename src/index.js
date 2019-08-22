@@ -5,7 +5,10 @@ import {
 } from './utils';
 
 export default class ThisMonth {
-  constructor({ year, month, daysOff, holidays }) {
+  constructor(args) {
+    const {
+      year, month, daysOff, holidays,
+    } = args;
     this.year = year;
     this.month = month;
     this.daysOff = getDaysOff(daysOff);

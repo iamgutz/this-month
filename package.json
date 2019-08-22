@@ -27,7 +27,8 @@
     "clean-dist": "rimraf ./lib",
     "lint": "eslint src",
     "lint-fix": "eslint src --fix",
-    "test": "mocha src/*.test.js --require babel-core/register"
+    "test": "mocha src/*.test.js --require babel-core/register",
+    "ship": "np"
   },
   "repository": {
     "type": "git",
